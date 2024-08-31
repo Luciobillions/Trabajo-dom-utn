@@ -1,0 +1,95 @@
+/* Para que se respeten los heigth width */
+*{
+    box-sizing: border-box;
+
+}
+#marco-general{
+max-width: 1200px;
+margin: 0 auto;
+background-color: white;
+box-shadow: 0 0 10px grey;
+
+}
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+header{
+    padding: 40px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    background-image: url("https://www.infobae.com/new-resizer/-zqFipJ4lnCkqIYOtrqxkgJr6AQ=/1440x960/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/H5EP2HSF3RCURNLRXOETIZZEM4.jpg");
+}
+header h1{
+    color: rgb(0, 0, 0);
+    
+    
+}
+div .icono{
+    width: 100px;
+    height: 100px;
+    
+}
+div .icono img{
+width: 100px;
+
+position: relative;
+border-radius: 50%;
+color: #4c5b5e;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+    justify-content: center;
+}
+nav a{
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ aside{
+    flex: 30px;
+    background-color: rgb(241, 241, 229);
+    padding: 20px;
+ }
+ section{
+    flex: 70%;
+    background-color: rgb(0, 0, 0);
+    pad: 20px;
+    color: white;
+    font-size: 17px;
+    
+ }
+ section img{
+    width: 100%;
+ }
+ footer{
+    padding: 15px;
+    text-align: center;
+    background-color: black;
+    color: white;
+ }
+ .caja-text{
+    padding: 15px;
+ }
+ .logos-spon img{
+    width: 30px;
+    height: 30px;
+ }
+ @media screen and (max-width: 700px){
+    nav, .row{
+        flex-direction: column;
+    }
+ }
+    
+ 

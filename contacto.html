@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/iconopagina.png" />
+    <link rel="stylesheet" href="css/styles-contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <title>Concesionaria Online</title>
+</head>
+
+<body>
+    <div id="marco-general">
+        <header>
+            <div class="icono"><img src="img/sticky.png" alt=""></div>
+            <h1>Concesionaria Online </h1>
+        </header>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cards.html">Productos</a>
+            <a href="galeria.html">Galería</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <div class="row">
+            <div class="container-form">
+                <section>
+                    <h2>Contáctanos</h2>
+                    <p>Hacer consultas dentro de este horario:
+                        <br>
+                        8:30 - 12:30
+                        <br>
+                        16:30 - 20:30
+                    </p>
+                    <div class="ico">
+                        <img src="img/llamar.png" alt=""> 3385-475869
+                    </div>
+                    <div class="ico">
+                        <img src="img/gmail.png" alt=""> Concesionariaonlinelb.gmail.com
+                    </div>
+                </section>
+
+                <form autocomplete="off" action="https://formspree.io/f/xdknebaz" method="POST">
+                    <input type="text" name="nombre" placeholder="ingresa tu nombre" class="campo" required>
+                    <input type="email" name="email" placeholder="ingresa tu correo" class="campo" required>
+                    <input type="tel" name="telefono" placeholder="ingresa tu telefono" class="campo" required>
+                    <select name="lista" id="generos" required>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                    </select>
+
+                    <br>
+                    <textarea name="mensaje" placeholder="Dejar una consulta" required></textarea>
+                    <br>
+                    <label><input type="checkbox" required> No soy un robot</label>
+                    <br>
+
+                    <div class="botones">
+                        <input type="submit" name="enviar" value="Enviar" class="btn-enviar">
+                        <input type="reset" name="enviar" value="Reset" class="btn-enviar">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <section id="cards">
+            <section class="Peticion">
+            <h2>Peticiones 🙏</h2>
+            <h3>Añade los autos que te gustaria que traigamos</h3>
+        </section>
+            <div id="cards-container">
+
+
+            </div>
+            <div id="card-form-container">
+
+                <form id="card-form">
+
+                    <label for="card-title">Modelo:</label>
+                    <input type="text" id="card-title" name="card-title" required>
+                    <br>
+                    <label for="card-description">Descripcion:</label>
+                    <input type="text" id="card-description" name="card-description" required>
+                    <br>
+                    <label for="card-image">Imagen: </label>
+                    <input type="url" name="card-image" id="card-image" required>
+                    <br>
+                    <div class="botton-imagen">
+                        <button id="uploadBtn">Subir Imagen</button>
+                        <input type="file" id="fileInput" accept="image/*" style="display:none" >
+                        <img id="preview" alt="Vista previa" style="display:none">
+                    </div>
+
+
+                    <br>
+                    <h4>Personalizacion</h4>
+                    <label for="card-bg-color">Color de fondo</label>
+                    <input type="color" id="card-bg-color" name="card-bg-color" value="#ffffff">
+                    <br>
+                    <label for="card-border-color">Color del borde</label>
+                    <input type="color" id="card-border-color" name="card-border-color" value="#000000">
+                    <br>
+                    <div class="boton-peticion">
+                        <button type="submit" id="uploadBtn">Añadir Peticion</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <script src="js/script.js"></script>
+
+        <br>
+        <footer>
+
+            <div class="caja-text">
+                <h2>Patrocinadores:</h2>
+            </div>
+            <div class="logos-spon">
+                <img src="img/logo-toyota--.png" alt="">
+                <img src="img/logo-mercedes.png" alt="">
+                <img src="img/lambo.png" alt="">
+                <img src="img/chevrolet.png" alt="">
+            </div>
+            <br>
+            <p>Encuentra el auto de tus sueños, sin salir de casa.</p>
+            <small class="copy">
+                &copy; 2024 <b>Lucio Gomez</b> - Todos Los Derechos Reservados
+            </small>
+
+        </footer>
+    </div>
+</body>
+
+</html>

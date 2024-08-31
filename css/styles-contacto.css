@@ -1,0 +1,285 @@
+/* Para que se respeten los heigth width */
+* {
+    box-sizing: border-box;
+
+}
+
+#marco-general {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px grey;
+
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header {
+    padding: 40px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    background-image: url("https://www.infobae.com/new-resizer/-zqFipJ4lnCkqIYOtrqxkgJr6AQ=/1440x960/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/H5EP2HSF3RCURNLRXOETIZZEM4.jpg");
+}
+
+header h1 {
+    color: rgb(0, 0, 0);
+
+
+}
+
+div .icono {
+    width: 100px;
+    height: 100px;
+
+}
+
+div .icono img {
+    width: 100px;
+
+    position: relative;
+    border-radius: 50%;
+    color: #4c5b5e;
+}
+
+div .ico img {
+    width: 20px;
+    height: 20px;
+
+
+}
+
+form {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.container-form {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin-top: 85px;
+
+}
+
+.container-form h2 {
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+
+.container-form p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.container-form form .campo,
+textarea {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 15px;
+    border: 1px solid;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+
+}
+
+/* para que el texte area no se escape de la pantalla */
+.container-form form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+.container-form .btn-enviar{
+    width: 30%;
+    padding: 10px;
+    font-size: 16px;
+    outline: 0px;
+    background-color: rgb(49, 108, 197);
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside {
+    flex: 30px;
+    background-color: rgb(241, 241, 229);
+    padding: 20px;
+}
+
+section {
+    flex: 70%;
+    background-color: rgb(255, 255, 253);
+    pad: 20px;
+
+}
+
+.Peticion{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+section img {
+    width: 100%;
+}
+#cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* efecto de borde negro y de zoom */
+.card{
+    border: 2px solid white;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+
+
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.8);
+    transform: translateY(-3%);
+}
+
+.card img{
+    /* para que no me rompa la caja */
+    width: 100%;
+    /* respecte la relacion de aspecto y no quede gigante */
+    height: auto;
+}
+.card-content{
+ margin-top: 10px;
+    color: black;
+}
+/* verificar el campo importante poner requiered en el html*/
+input:valid{
+    border-color: green;
+    border-radius: 5px;
+}
+input:invalid{
+    border-radius: 5px;
+    border-color: red;
+}
+
+#uploadBtn {
+    background-color: #000000;
+    color: white;
+    padding: 10px ;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#uploadBtn:hover {
+    transition: all 0.3 ease;
+    background-color: #2a2b2a;
+}
+
+#preview {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.boton-peticion{
+    color: white;
+    padding: 10px ;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button{
+    position: relative;
+    border: none;
+    outline: none;
+
+}
+
+/* efecto de boton */
+#uploadBtn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+  width: 100%;
+  height: 100%;
+    background-color: rgb(86, 90, 92);
+    z-index: -1;
+    border-radius: 7px;
+    filter: blur(8px);
+   
+    transform: translateY(7px);
+
+}
+
+#uploadBtn:active{
+    transform: translateY(5px);
+}
+#uploadBtn:active::before{
+    transform: translateY(0);
+}
+input {
+
+    padding: 5px;
+}
+
+footer{
+    padding: 15px;
+    text-align: center;
+    background-color: black;
+    color: white;
+ }
+ .caja-text{
+    padding: 15px;
+ }
+ .logos-spon img{
+    width: 30px;
+    height: 30px;
+ }
+@media screen and (max-width: 700px) {
+
+    nav,
+    .row {
+        flex-direction: column;
+    }
+}
